@@ -16,26 +16,26 @@ from models import storage  # & Import the storage object
 
 class HBNBCommand(cmd.Cmd):
     """HBNBCommand class that contains the entry point of the command"""
-    # Set the command prompt
+    # & Set the command prompt
     prompt = '(hbnb) '
 
     def do_quit(self, arg):
         """Quit command to exit the program
         Args:
             arg (str): arguments coming from the command line"""
-        # Exit the program
+        # & Exit the program
         return True
 
     def do_EOF(self, arg):
         """EOF command to exit the program
         Args:
             arg (str): arguments coming from the command line"""
-        # Exit the program
+        # & Exit the program
         return True
 
     def emptyline(self):
         """An empty line + ENTER shouldn’t execute anything"""
-        #  Do nothing if the line is empty
+        # & Do nothing if the line is empty
         pass
 
     def do_create(self, arg):
@@ -44,21 +44,21 @@ class HBNBCommand(cmd.Cmd):
         and prints the id
         Args:
             arg (str): <class name>"""
-        # Check if the class name is provided
+        # & Check if the class name is provided
         if not arg:
             print("** class name missing **")
             return
-        # Check if the class exists
+        # & Check if the class exists
         elif arg not in globals() or not \
                 issubclass(globals()[arg], BaseModel):
             print("** class doesn't exist **")
             return
         else:
-            #Create a new instance of the class
+            # & Create a new instance of the class
             new_instance = globals()[arg]()
-            #Save the new instance
+            # & Save the new instance
             new_instance.save()
-            #Print the id of the new instance
+            # & Print the id of the new instance
             print(new_instance.id)
 
     def do_show(self, arg):
@@ -68,24 +68,24 @@ class HBNBCommand(cmd.Cmd):
         Args:
             arg (str): <class name> <id>
         """
-        #Split the arguments into a list of strings
+        # & Split the arguments into a list of strings
         args = arg.split()
-        #Check if the class name is provided
+        # & Check if the class name is provided
         if len(args) == 0:
             print("** class name missing **")
             return
-        #Check if the class exists and is a subclass of BaseModel
+        # & Check if the class exists and is a subclass of BaseModel
         if args[0] not in globals() or not \
                 issubclass(globals()[args[0]], BaseModel):
             print("** class doesn't exist **")
             return
-        #Check if the id is provided
+        # & Check if the id is provided
         if len(args) == 1:
             print("** instance id missing **")
             return
-        #Create a key with the class name and id
+        # & Create a key with the class name and id
         key = args[0] + "." + args[1]
-        #Check if the instance exists
+        # & Check if the instance exists
         if key in storage.all():
             # & Print the instance
             print(storage.all()[key])
@@ -99,28 +99,28 @@ class HBNBCommand(cmd.Cmd):
         Args:
             arg (str): <class name> <id>
         """
-        #Split the arguments into a list of strings
+        # & Split the arguments into a list of strings
         args = arg.split()
-        #Check if the class name is provided
+        # & Check if the class name is provided
         if len(args) == 0:
             print("** class name missing **")
             return
-        #Check if the class exists and is a subclass of BaseModel
+        # & Check if the class exists and is a subclass of BaseModel
         if args[0] not in globals() or not \
                 issubclass(globals()[args[0]], BaseModel):
             print("** class doesn't exist **")
             return
-        #Check if the id is provided
+        # & Check if the id is provided
         if len(args) == 1:
             print("** instance id missing **")
             return
-        #Create a key with the class name and id
+        # & Create a key with the class name and id
         key = args[0] + "." + args[1]
-        #Check if the instance exists
+        # & Check if the instance exists
         if key in storage.all():
-            #Delete the instance
+            # & Delete the instance
             del storage.all()[key]
-            #Save the changes to the JSON file
+            # & Save the changes to the JSON file
             storage.save()
         else:
             print("** no instance found **")
@@ -132,20 +132,20 @@ class HBNBCommand(cmd.Cmd):
         Args:
             arg (str): <class name>
         """
-        #Split the arguments into a list of strings
+        # & Split the arguments into a list of strings
         args = arg.split()
-        #If there are no arguments, print all instances
+        # & If there are no arguments, print all instances
         if len(args) == 0:
             for key, obj in storage.all().items():
                 print(obj)
         else:
-            #Check if the class exists and is a subclass of BaseModel
+            # & Check if the class exists and is a subclass of BaseModel
             key = args[0]
             if key not in globals() or not \
                     issubclass(globals()[key], BaseModel):
                 print("** class doesn't exist **")
                 return
-            #Print all instances of the specified class
+            # & Print all instances of the specified class
             for key, obj in storage.all().items():
                 if key.split(".")[0] == args[0]:
                     print(obj)
@@ -158,32 +158,32 @@ class HBNBCommand(cmd.Cmd):
         Args:
             arg (str): <class name> <id> <attribute name> <attribute value>
         """
-        #Split the arguments into a list of strings
+        # & Split the arguments into a list of strings
         args = arg.split()
-        #Check if the class name is provided
+        # & Check if the class name is provided
         if len(args) == 0:
             print("** class name missing **")
             return
-        #Check if the class exists and is a subclass of BaseModel
+        # & Check if the class exists and is a subclass of BaseModel
         if args[0] not in globals() or not \
                 issubclass(globals()[args[0]], BaseModel):
             print("** class doesn't exist **")
             return
-        # Check if the id is provided
+        # & Check if the id is provided
         if len(args) == 1:
             print("** instance id missing **")
             return
-        #Check if the attribute name is provided
+        # & Check if the attribute name is provided
         if len(args) == 2:
             print("** attribute name missing **")
             return
-        #Check if the attribute value is provided
+        # & Check if the attribute value is provided
         if len(args) == 3:
             print("** value missing **")
             return
-        #Create a key with the class name and id
+        # & Create a key with the class name and id
         key = args[0] + "." + args[1]
-        #Check if the instance exists
+        # & Check if the instance exists
         if key in storage.all():
             # & Update the attribute and save the changes
             setattr(storage.all()[key], args[2], args[3])
@@ -192,6 +192,6 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
 
-# Start the command loop
+# & Start the command loop
 if __name__ == '__main__':
-    HBNBCommand().cmdloop()
+    HBNBCommand().cmdloop()  # & keeps clas in loop
