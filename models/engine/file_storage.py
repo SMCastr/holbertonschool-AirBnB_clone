@@ -2,8 +2,9 @@
 """Class that serializes instances to a JSON file
     and deserializes JSON file to instances:"""
 
-import json
-import os.path
+import json # & Module to work with JSON
+import os.path # & Module to work with file paths
+import models # & Module to work with models
 
 
 class FileStorage:
