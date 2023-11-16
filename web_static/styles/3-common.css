@@ -1,3 +1,4 @@
+/* styles/3-common.css */
 body {
     margin: 0;
     padding: 0;
@@ -8,5 +9,6 @@ body {
 
 /* Favicon */
 link[rel="shortcut icon"] {
-    icon: url("images/favicon.ico");
+    content: url("images/favicon.ico");
+    type: "path/to/image/x-icon";
 }
