@@ -1,12 +1,11 @@
 /* styles/2-footer.css */
 footer {
-    background-color: #00FF00;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
+    background-color: #00FF00; /* Set background color to green (#00FF00) */
+    width: 100%; /* Full width */
+    height: 60px; /* Set height to 60px */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom of the page */
 }

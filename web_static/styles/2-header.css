@@ -1,6 +1,6 @@
 /* styles/2-header.css */
 header {
-    background-color: #FF0000;
-    height: 70px;
-    width: 100%;
+    background-color: #FF0000; /* Set background color to red (#FF0000) */
+    width: 100%; /* Full width */
+    height: 60px; /* Set height to 60px */
 }
