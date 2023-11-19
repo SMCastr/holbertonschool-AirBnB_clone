@@ -6,9 +6,3 @@ body {
     font-size: 14px;
     color: #484848;
 }
-
-/* Favicon */
-link[rel="shortcut icon"] {
-    content: url("images/favicon.ico");
-    type: "path/to/image/x-icon";
-}

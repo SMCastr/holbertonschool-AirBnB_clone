@@ -4,12 +4,9 @@ footer {
     height: 60px;
     width: 100%;
     border-top: 1px solid #CCCCCC;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    box-sizing: border-box;
 }
