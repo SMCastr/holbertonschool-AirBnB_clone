@@ -1,23 +1,29 @@
 /*styles/7-places.css */
-.places {
-    margin-top: 40px;
+.places { /* Add places class */
+    display: flex; /* Add display flex */
+    flex-flow: row wrap; /* Add flex-flow */
+    justify-content: space-around; /* Add justify-content */
 }
 
-h1 {
-    font-size: 30px;
-    margin: 0;
+.places h1{ /* Add h1 tag */
+    text-align: left; /* Add text align */
+    font-size: 30px; /* Set font size to 30px */
+    display: block; /* Add display block */
+    flex-grow: 2; /* Add flex-grow */
+    width: 100%; /* Set width to 100% */
+    margin-left: 1em; /* Add margin left */
 }
 
-article {
-    width: 390px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px #FF5A5F solid;
-    border-radius: 4px;
+.places article { /* Add article tag */
+    width: 390px; /* Set width to 390px */
+    padding: 20px; /* Add padding */
+    margin: 20px; /* Add margin */
+    border: 1px solid #FF5A5F; /* Add border */
+    border-radius: 4px; /* Add border radius */
 }
 
-h2 {
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
+.places article h2 { /* Add h2 tag */
+    font-size: 30px; /* Set font size to 30px */
+    text-align: center; /* Add text align */
+    margin-top: 0.175em; /* Add margin top */
 }

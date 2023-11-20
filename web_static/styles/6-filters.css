@@ -1,89 +1,95 @@
 /* styles/6-filters.css */
-/* styles/6-filters.css */
-.filters {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    padding-right: 30px;
+.filters{ /* Add filters class */
+    background-color: #FFFFFF; /* Set background color to white */
+    height: 70px; /* Set height to 70px */
+    width: 100%; /* Set width to 100% */
+    border: 1px solid #DDDDDD; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    text-align: right; /* Add text align */
+    display: flex; /* Add display flex */
+    justify-content: flex-start; /* Add justify-content */
 }
 
-button {
-    font-size: 18px;
-    background-color: #FF5A5F;
-    color: #FFFFFF;
-    height: 48px;
-    width: 20%;
-    border: none;
-    border-radius: 4px;
-    margin-left: auto;
+.search-button{ /* Add search-button class */
+    font-size: 18px; /* Set font size to 18px */
+    background-color: #FF5A4F; /* Set background color to red */
+    color: #FFFFFF; /* Set color to white */
+    height: 48px; /* Set height to 48px */
+    width: 20%; /* Set width to 20% */
+    border-radius: 4px; /* Add border radius */
+    border-style: none; /* Remove border */
+    margin-top: 10px; /* Add margin top */
+    margin-right: 30px; /* Add margin right */
+    margin-left: auto; /* Add margin left */
+    order: 2; /* Add order */
 }
 
-button:hover {
-    opacity: 90%;
+.search-button:hover{ /* Add hover effect */
+    opacity: 0.9; /* Add opacity to 90% on hover */
 }
 
-.locations,
-.amenities {
-    height: 100%;
-    width: 25%;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+.locations { /* Add locations class */
+    height: 100%; /* Set height to 100% */
+    width: 25%; /* Set width to 25% */
+    border-right: 1px solid #DDDDDD; /* Add border-right */
+    order: 0; /* Add order */
+    text-align: left; /* Add text align */
+    margin-left: 40px; /* Add margin left */
 }
 
-.amenities {
-    text-indent: 30px;
+.amenities { /* Add amenities class */
+    height: 100%; /* Set height to 100% */
+    width: 25%; /* Set width to 25% */
+    order: 1; /* Add order */
+    text-align: left; /* Add text align */
+    margin-left: 40px; /* Add margin left */
 }
 
-.locations {
-    border-right: #DDDDDD 1px solid;
+.amenities h3, /* Add h3 tag */
+.locations h3 { /* Add h3 tag */
+    font-weight: 600; /* Set font weight to 600 */
+    margin: 12px 0; /* Add margin */
 }
 
-.locations h3,
-.amenities h3 {
-    font-weight: 600;
-    margin-bottom: 0;
-    padding-left: 30px;
+.amenities h4, /* Add h4 tag */
+.locations h4 { /* Add h4 tag */
+    font-weight: 400; /* Set font weight to 400 */
+    font-size: 10px; /* Set font size to 14px */
+    margin: 0 auto; /* Reset margin */
 }
 
-.locations h4,
-.amenities h4 {
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding-left: 30px;
-    text-align: left;
+.popover { /* Add popover class */
+    display: none; /* Hide popover */
+    background-color: #FAFAFA; /* Set background color to white */
+    width: 292px; /* Set width to 292px */
+    border: 1px solid #DDDDDD; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    margin-left: -41px; /* Add margin left */
+    margin-top: 13px; /* Add margin top */
+    box-sizing: border-box; /* Add box sizing */
 }
 
-.locations:hover .popover,
-.amenities:hover .popover {
-    display: block;
-    width: 100%;
-    position: static;
-    align-items: left;
-    margin: 0;
+.popover li { /* Add li tag */
+    list-style-type: none; /* Remove list style */
 }
 
-.locations:hover .popover h3 {
-    font-weight: 600;
-    margin-bottom: 0;
-    padding-left: 0;
+.popover h2 { /* Add h2 tag */
+    margin-bottom: 5px; /* Add margin bottom */
 }
 
-.popover {
-    display: none;
-    box-sizing: border-box;
-    background-color: #FAFAFA;
-    width: 100%;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    list-style-type: none;
-    padding: 25px;
-    z-index: 1;
+.popover ul { /* Add ul tag */
+    margin-top: 5px; /* Add margin top */
+}
+
+.locations .popover ul { /* Add ul tag */
+    padding-left: 20px; /* Add padding left */
+}
+
+.locations:hover .popover { /* Add hover effect */
+    display: block; /* Display popover on hover */
+    padding-left: 18px; /* Add padding left */
+}
+
+.amenities:hover .popover { /* Add hover effect */
+    display: block; /* Display popover on hover */
 }
