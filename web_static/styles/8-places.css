@@ -1,96 +1,96 @@
 /*styles/8-places.css */
-.places {
-    position: relative;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.places { /* Add places class */
+    position: relative; /* Add position relative */
+    padding: 30px; /* Add padding */
+    display: flex; /* Add display flex */
+    flex-wrap: wrap; /* Add flex-wrap */
+    justify-content: space-around; /* Add justify-content */
 
 }
 
-.places h1 {
-    font-size: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 30px;
+.places h1 { /* Add h1 tag */
+    font-size: 30px; /* Set font size to 30px */
+    position: absolute; /* Add position absolute */
+    top: 0; /* Add top */
+    left: 0; /* Add left */
+    padding-left: 30px; /* Add padding left */
 }
 
-article {
-    width: 390px;
-    padding: 20px;
-    border: #FF5A5F 1px solid;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-article h2 {
-    font-size: 30px;
-    margin: auto;
-}
-
-.price_by_night {
-    color: #FF5A5F;
-    border: 4px solid #FF5A5F;
-    border-radius: 50%;
-    min-width: 60px;
-    height: 60px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    float: right;
-}
-
-.information {
-    height: 80px;
-    width: inherit;
-    border-top: #DDDDDD 1px solid;
-    border-bottom: #DDDDDD 1px solid;
-    margin-top: 10px;
-    margin-bottom: auto;
-    display: flex;
-    align-items: center;
-}
-
-.max_guest,
-.number_rooms,
-.number_bathrooms {
-    width: 100px;
-    height: 70px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin: auto;
+article { /* Add article tag */
+    width: 390px; /* Set width to 390px */
+    padding: 20px; /* Add padding */
+    border: #FF5A5F 1px solid; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    text-align: center; /* Add text align */
+    margin-top: 60px; /* Add margin top */
+    display: flex; /* Add display flex */
+    flex-wrap: wrap; /* Add flex-wrap */
 
 }
 
-.max_guest {
+article h2 { /* Add h2 tag */
+    font-size: 30px; /* Set font size to 30px */
+    margin: auto; /* Add margin */
+}
+
+.price_by_night { /* Add price_by_night class */
+    color: #FF5A5F; /* Set color to red */
+    border: 4px solid #FF5A5F; /* Add border */
+    border-radius: 50%; /* Add border radius */
+    min-width: 60px; /* Set min width to 60px */
+    height: 60px; /* Set height to 60px */
+    font-size: 30px; /* Set font size to 30px */
+    display: flex; /* Add display flex */
+    justify-content: center; /* Add justify-content */
+    align-items: center; /* Add align-items */
+    top: 0; /* Add top */
+    right: 0; /* Add right */
+    float: right; /* Add float right */
+}
+
+.information { /* Add information class */
+    height: 80px; /* Set height to 80px */
+    width: inherit; /* Set width to inherit */
+    border-top: #DDDDDD 1px solid; /* Add border top */
+    border-bottom: #DDDDDD 1px solid; /* Add border bottom */
+    margin-top: 10px; /* Add margin top */
+    margin-bottom: auto; /* Add margin bottom */
+    display: flex; /* Add display flex */
+    align-items: center; /* Add align-items */
+}
+
+.max_guest, /* Add max_guest class */
+.number_rooms, /* Add number_rooms class */
+.number_bathrooms { /* Add number_bathrooms class */
+    width: 100px; /* Set width to 100px */
+    height: 70px; /* Set height to 70px */
+    background-size: auto; /* Add background size */
+    background-repeat: no-repeat; /* Add background repeat */
+    background-position: center; /* Add background position */
+    display: flex; /* Add display flex */
+    justify-content: center; /* Add justify-content */
+    align-items: flex-end; /* Add align-items */
+    margin: auto; /* Add margin */
+
+}
+
+.max_guest { /* Add max_guest class */
     background-image: url('../images/guest.png');
 }
 
-.number_rooms {
+.number_rooms { /* Add number_rooms class */
     background-image: url('../images/rooms.png');
 }
 
-.number_bathrooms {
+.number_bathrooms { /* Add number_bathrooms class */
     background-image: url('../images/bathrooms.png');
 }
 
-.user {
-    margin-top: 20px;
-    text-align: left;
+.user { /* Add user class */
+    margin-top: 20px; /* Add margin top */
+    text-align: left; /* Add text align */
 }
 
-.description {
-    text-align: left;
+.description { /* Add description class */
+    text-align: left; /* Add text align */
 }
