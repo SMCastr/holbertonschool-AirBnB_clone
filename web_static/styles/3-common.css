@@ -2,7 +2,7 @@
 body{
     margin: 0; /* Set margin to 0 */
     padding: 0; /* Set padding to 0 */
-    font-color: #484848; /* Set font color to #484848 */
+    color: #484848; /* Set font color to #484848 */
     font-size: 14px; /* Set font size to 14px */
     font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif; /* Set font family to Circular */
     min-height: 100vh; /* Set minimum height to 100vh */
