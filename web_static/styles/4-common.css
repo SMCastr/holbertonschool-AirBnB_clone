@@ -1,20 +1,13 @@
 /* styles/3-header.css */
-header {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid #CCCCCC;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
-    background-image: url('../images/AirBnB_logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 20px center;
+body{ /* Set margin and padding to 0 */
+    margin: 0; 
+    padding: 0;
+    color: #484848; /* Set text color to #484848 */
+    font-size: 14px; /* Set default font size to 14px */
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Additional styles if necessary */
-.logo {
-    align-content: left;
+.container{ /* Set width to 1000px and center content */
+    max-width: 1000px; 
+    margin: 30px auto 30px auto;
 }
