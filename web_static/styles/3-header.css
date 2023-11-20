@@ -1,21 +1,23 @@
 /* styles/3-header.css */
 header {
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid #CCCCCC;
-    display: flex;
-    align-items: center;
+    background-color: white; /* Set background color to white (#FFFFFF) */
+    height: 70px; /* Set height to 70px */
+    width: 100%; /* Full width */
+    border-bottom: 1px solid #CCCCCC; /* Add a 1px border to the bottom */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
     justify-content: space-between; /* Added justify-content property */
 }
 
 /* Adjust the logo alignment as needed */
 header img {
-    margin-left: 20px;
-    margin-top: 0;
+    margin-left: 20px; /* Adjust as needed */
+    margin-top: 0; /* Adjust as needed */
 }
 
 /* Additional styles if necessary */
 .logo {
-    align-content: left;
+    height: 100%; /* Added height property */
+    align-content: left; /* Added align-content property */
+    display: block; /* Added display property */
 }

@@ -1,12 +1,16 @@
 /* styles/3-footer.css */
-footer {
+footer{
     background-color: white;
     height: 60px;
     width: 100%;
-    border-top: 1px solid #CCCCCC;
-    display: flex;
+    border-top: 1px #cccccc;
+    display:flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
+}
+
+footer p{
+    margin: 0;
 }
