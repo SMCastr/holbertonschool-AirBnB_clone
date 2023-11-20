@@ -10,5 +10,5 @@ footer {
     bottom: 0; /* Stick to the bottom of the page */
 }
 footer p{
-    margin: 0;
+    margin: 0; /* Reset margin */
 }
