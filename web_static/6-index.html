@@ -1,56 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AirBnB clone</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="styles/4-common.css" />
-    <link rel="stylesheet" href="styles/3-footer.css" />
-    <link rel="stylesheet" href="styles/3-header.css" />
-    <link rel="stylesheet" href="styles/6-filters.css" />
-</head>
-
-<body>
-    <header>
-        <img src="images/logo.png" alt="Holberton School Logo">
-        <!-- Header content goes here if needed -->
-    </header>
-    <div class="container">
-        <section class="filters">
-            <div class="locations">
-                <h3>States</h3>
-                <h4>California, Florida...</h4>
-                <ul class="popover">
-                    <h3>Florida:</h3>
-                    <li>
-                        <h4>element1</h4>
-                        <h4>element2</h4>
-                    </li>
-                    <h3>California:</h3>
-                    <li>
-                        <h4>San Francisco </h4>
-                        <h4>Los Angeles</h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Internet, Kitchen...</h4>
-                <ul class="popover">
-                    <li>
-                        <h4>Internet</h4>
-                        <h4>TV</h4>
-                        <h4>Kitchen</h4>
-                        <h4>Iron</h4>
-                    </li>
-                </ul>
-            </div>
-            <button>Search</button>
-        </section>
-    </div>
-    <footer>Holberton School</footer>
-</body>
-
+        <!--styles links-->
+        <link rel="stylesheet" href="styles/4-common.css">
+        <link rel="stylesheet" href="styles/3-header.css">
+        <link rel="stylesheet" href="styles/3-footer.css">
+        <link rel="stylesheet" href="styles/6-filters.css">
+        <!--title-->
+        <link rel="icon" type="image/png" href="images/AirBnB_logo.png">
+        <title>AirBnB clone</title>
+    </head>
+    <main>
+        <body>
+            <header>
+                <a href="images" class="logo"></a>
+                <h1>AirBnB clone</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home">Home</a></li>
+                        <li><a href="search">Search</a></li>
+                        <li><a href="help">Help</a></li>
+                        <li><a href="signup">Sign up</a></li>
+                        <li><a href="login">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+                <div class="container">
+                    <section class="filters">
+                        <div class="locations">
+                            <h3>States</h3>
+                            <h4>California, Arizona...</h4>
+                            <div class="popover">
+                            <h2>Arizona</h2>
+                            <ul>
+                                <li>Phoenix</li>
+                                <li>Tucson</li>
+                            </ul>
+                            <h2>California</h2>
+                            <ul>
+                                <li>San Francisco</li>
+                                <li>Los Angeles</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="amenities">
+                            <h3>Amenities</h3>
+                            <h4>Internet, Kitchen</h4>
+                            <div class="popover">
+                                <ul>
+                                    <li>Internet</li>
+                                    <li>TV</li>
+                                    <li>Kitchen</li>
+                                    <li>Pool</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--filter box with search button-->
+                        <button class="search-button">Search</button>
+                    </section>
+                </div>
+                <!--Footer section-->
+            <footer>
+                    <p>Holberton School</p>
+            </footer>
+        </body>
+    </main>
 </html>
