@@ -11,3 +11,21 @@ body{ /* Set margin and padding to 0 */
     max-width: 1000px; 
     margin: 30px auto 30px auto;
 }
+
+body{
+    min-height: 100vh; /* Set minimum height to 100vh */
+    display: flex; /* Set display to flex */
+    flex-direction: column; /* Set flex direction to column */
+}
+
+.search-button{
+    font-size: 18px; /* Set font size to 18px */
+    background-color: #FF5A5F; /* Set background color to red */
+    color: #FFFFFF; /* Set text color to white */
+    height: 48px; /* Set height to 48px */
+    width: 20%; /* Set width to 20% */
+    border-radius: 4px; /* Rounded borders */
+    border-style: none; /* Remove border */
+    margin-top: 10px; /* Set top margin to 10px */
+    margin-right: 30px; /* Set right margin to 30px */
+}

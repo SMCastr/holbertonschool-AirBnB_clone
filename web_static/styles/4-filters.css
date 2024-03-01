@@ -1,26 +1,23 @@
 /* styles/4-filters.css */
-.filters {
+.filters { /* Add filters class */
     background-color: white; /* Set background color to white */
     height: 70px; /* Set height to 70px */
-    width: 100%; /* Full width */
-    border: 1px solid #DDDDDD; /* Add a grey border */
-    border-radius: 4px; /* Rounded borders */
-    text-align: right; /* Align text to the right */
-
+    width: 100%; /* Set width to 100% */
+    border: 1px #DDDDDD solid; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    display: flex; /* Add display flex */
+    justify-content: space-between; /* Add justify-content */
+    align-items: center; /* Add align-items */
 }
 
-.search-button{
+.filters button { /* Add button tag */
     font-size: 18px; /* Set font size to 18px */
     background-color: #FF5A5F; /* Set background color to red */
-    color: #FFFFFF; /* Set text color to white */
+    color: #FFFFFF; /* Set color to white */
     height: 48px; /* Set height to 48px */
     width: 20%; /* Set width to 20% */
-    border-radius: 4px; /* Rounded borders */
-    border-style: none; /* Remove border */
-    margin-top: 10px; /* Set top margin to 10px */
-    margin-right: 30px; /* Set right margin to 30px */
-}
-
-.filters button:hover {
-    opacity: 0.9; /* Change opacity to 90% when mouse is on the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    opacity: 100%; /* Set opacity to 100% */
+    cursor: pointer; /* Add cursor:pointer to indicate it's clickable */
 }

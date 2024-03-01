@@ -75,15 +75,15 @@ article h2 { /* Add h2 tag */
 }
 
 .max_guest { /* Add max_guest class */
-    background-image: url('../images/guest.png');
+    background-image: url('./web_static/images/guest.png');
 }
 
 .number_rooms { /* Add number_rooms class */
-    background-image: url('../images/rooms.png');
+    background-image: url('./web_static/images/rooms.png');
 }
 
 .number_bathrooms { /* Add number_bathrooms class */
-    background-image: url('../images/bathrooms.png');
+    background-image: url('./web_static/images/bathrooms.png');
 }
 
 .user { /* Add user class */
